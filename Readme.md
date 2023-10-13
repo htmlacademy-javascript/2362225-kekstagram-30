@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Сергей Бралгин](https://up.htmlacademy.ru/javascript/30/user/2362225).
-* Наставник: [Сергей Остаповец](https://htmlacademy.ru/pro
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
