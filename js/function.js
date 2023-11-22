@@ -42,6 +42,7 @@ const returnsNumbers = (string) => {
   }
   return parseInt (result, 10);
 };
+
 returnsNumbers ('2023 год');// 2023
 returnsNumbers ('ECMAScript 2022');// 2022
 returnsNumbers ('1 кефир, 0.5 батона'); // 105
