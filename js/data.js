@@ -34,13 +34,14 @@ const createComment = () => ({
 });
 
 // Функция, которая создает описание фотографии, опубликованной пользователем.
-const createUserPhoto = (index) => ({
+const createUserPhoto = () => ({
   id: createIdGenerator (),
-  url: `photos/${index}.png`,
+  url: `photos/${getRandomInteger (1, 25)}.jpg`,
   description: getRandomArrayElement (photoDescription),
   likes: getRandomInteger (minNumberLikes, maxNumberLikes),
   comments: Array.from ({ length: getRandomInteger (0, numberComments) }, createComment)
 });
-const creatingPictures = () => Array.from ({ length: photoData }, (_, index) => createUserPhoto (index + 1));
+const creatingPictures = () => Array.from ({ length: photoData }, createUserPhoto);
+creatingPictures ();
 
 export { creatingPictures };
