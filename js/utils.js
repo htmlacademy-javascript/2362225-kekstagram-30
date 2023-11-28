@@ -8,7 +8,7 @@ const getRandomInteger = (a, b) => {
 };
 
 // Функция, создающая генератор уникальных идентификаторов
-const createIdGenerator = (() => {
+const createIdGenerator = () => {
   let idCounter = 0;
 
   // Возвращает новый уникальный идентификатор при каждом вызове
@@ -16,7 +16,7 @@ const createIdGenerator = (() => {
     idCounter += 1;
     return idCounter;
   };
-}) ();
+};
 
 // Функция для получения случайного индификатора из массива.
 const getRandomArrayElement = (element) => element[getRandomInteger (0, element.length - 1)];
